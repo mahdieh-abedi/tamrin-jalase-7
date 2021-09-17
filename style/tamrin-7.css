@@ -1,0 +1,98 @@
+.login-page{
+    display: grid;
+    width:90vw;
+    height: 95vh;
+    grid-template: 80fr / repeat(2, 45fr);
+    grid-template-areas: "login-image login-input";
+}
+h5{
+    color: #7c7878;
+    margin-top: 20px;
+}
+.link-class{
+    color: #3b9f9f;
+    text-underline-style: single;
+}
+.login-image{
+    grid-area: login-image;
+    background-image: url("../image/side-pic.jpg");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 20px;;
+}
+.login-image-text {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+.login-image-text-style{
+    font-family: "Rockwell Extra Bold", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: white;
+}
+.login-input{
+    grid-area: login-input;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
+}
+.login-logo{
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    margin: 70px 0 50px 0;
+}
+.login-logo-text{
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.lab-class{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: "Roboto Light" ,sans-serif;
+    color: #7c7878;
+}
+.input-class{
+    width: 400px;
+    border: none;
+    border-bottom: solid 1px #7c7878;
+}
+.forget-password{
+    text-align: right;
+    margin-left: 250px;
+    margin-top: 5px;
+}
+form{
+    margin-bottom: 0;
+}
+.bttn{
+    border-radius: 5rem;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: 15px 0;
+}
+
+.or-class{
+    text-align: center;
+}
+.icon-class{
+    width: 20px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .login-image{
+        display: none;
+    }
+
+}
